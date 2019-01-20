@@ -9,7 +9,6 @@ verify_ssl = true
 flask = "*"
 flask-bootstrap = "*"
 bs4 = "*"
-requests = "*"
 
 [requires]
 python_version = "3.7"

@@ -6,12 +6,11 @@ fero (fēro), Sebuah _side-project_ untuk tugas di per-kuliah-an. Fero -> Steel 
 - banyak.
 
 ## Running
-- Dependencies. `requests` is not optional, might be used in the future changes as replacement of builtin `urllib`.
+- Dependencies.
 ```
 flask
 flask-bootstrap
 beautifulsoup4
-~requests~
 ```
 - Quick Run
 ```
