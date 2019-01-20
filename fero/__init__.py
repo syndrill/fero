@@ -29,9 +29,13 @@ def create_app(test_config=None):
     def hello():
         return 'Hello, World!'
 
-    @app.route('/')
-    def index():
+    @app.route('/404')
+    def four_o_four():
         return abort(404)
+
+    @app.route('/403')
+    def four_o_three():
+        return abort(403)
 
     # blueprint
     from fero.scrapper import scrapper
