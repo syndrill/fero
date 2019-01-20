@@ -23,7 +23,7 @@ def fetch(keyword):
         url = _get_search_url(keyword, page)
         req = Request(url)
         html = urlopen(req)
-        soup = BeautifulSoup(html)
+        soup = BeautifulSoup(html, 'html.parser')
 
         for article in soup.findAll('article', {'class': 'simple-post'}):
             data.append({

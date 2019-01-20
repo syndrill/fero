@@ -31,7 +31,7 @@ def fetch(keyword):
     url = _get_search_url(keyword)
     req = Request(url, headers = _header_get)
     html = urlopen(req)
-    soup = BeautifulSoup(html)
+    soup = BeautifulSoup(html, 'html.parser')
     return soup
 
 def load(app):

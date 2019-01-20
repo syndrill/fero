@@ -19,7 +19,7 @@ def fetch(keyword):
     url = _get_search_url(keyword)
     req = Request(url)
     html = urlopen(req)
-    soup = BeautifulSoup(html)
+    soup = BeautifulSoup(html, 'html.parser')
 
     # TODO        
 
